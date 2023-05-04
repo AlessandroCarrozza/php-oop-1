@@ -5,7 +5,13 @@
 require __DIR__  . "./Models/Movie.php";
 
 
-// // creazione istanze della classe Movie
-$MovieOne = new Movie("Land of Mine", "2015/12/03", "Martin Zandvliet", "guerra", "tedesco");
-$MovieTwo = new Movie("Titanic", "1998/01/16", "James Cameron", "Dramma", "inglese");
-$MovieThree = new Movie("Il talento del calabrone", "2020/11/18", "Giacomo Cimini", "thriller", "italiano");
+// creazione istanze della classe Movie
+$MovieOne = new Movie("Land of Mine", "03/12/2015", "Martin Zandvliet", "Guerra", "Tedesco");
+$MovieTwo = new Movie("Titanic", "16/01/1998", "James Cameron", "Dramma", "Inglese");
+$MovieThree = new Movie("Il talento del calabrone", "11/18/2020", "Giacomo Cimini", "Thriller", "Italiano");
+
+
+// richiamare function della classe Movie
+$MovieOne->showInfo();
+$MovieTwo->showInfo();
+$MovieThree->showInfo();
