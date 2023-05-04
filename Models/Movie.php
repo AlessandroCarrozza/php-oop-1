@@ -25,3 +25,5 @@ class Movie {
         . "Lingua originale: " . $this->language . "</div>" . "</br>";
     }
 }
+
+?>

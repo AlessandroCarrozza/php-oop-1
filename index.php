@@ -15,3 +15,5 @@ $MovieThree = new Movie("Il talento del calabrone", "11/18/2020", "Giacomo Cimin
 $MovieOne->showInfo();
 $MovieTwo->showInfo();
 $MovieThree->showInfo();
+
+?>
