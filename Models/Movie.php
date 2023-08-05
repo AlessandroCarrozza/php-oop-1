@@ -4,25 +4,26 @@ class Movie {
     public $title;
     public $exitDate;
     public $director;
-    public $genre;
+    public $genres;
     public $language;
 
 
-    function __construct($_title, $_exitDate, $_director, $_genre, $_language){
+    function __construct($_title, $_exitDate, $_director, array $_genres, $_language){
         $this->title = $_title;
         $this->exitDate = $_exitDate;
         $this->director = $_director;
-        $this->genre = $_genre;
+        $this->genres = $_genres;
         $this->language = $_language;
+    }
+
+    public function getGenres() {
+        return implode(", " , $this->genres);
     }
 
 
     public function showInfo() {
-        echo "<div>" . "Film: " .  $this->title . "</br>"
-        . "Data di uscita: " . $this->exitDate . "</br>"
-        . "Regista: " . $this->director . "</br>"
-        . "Genere: " . $this->genre . "</br>"
-        . "Lingua originale: " . $this->language . "</div>" . "</br>";
+
+        echo $this->title . " - " . $this->exitDate . " - " .  $this->director . " - " . $this->language . " - " . $this->getGenres();
     }
 }
 
